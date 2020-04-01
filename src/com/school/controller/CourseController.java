@@ -62,7 +62,7 @@ public class CourseController {
 	}
 	
 	@ResponseBody
-	@RequestMapping("ativaCourse")
+	@RequestMapping("activeCourse")
 	public void activeCourse (Long id) {
 		dao.activeCourse(id);
 	}

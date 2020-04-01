@@ -31,7 +31,7 @@
 							</c:if>
 							
 							<td><fmt:formatDate value="${course.startDate.time}" pattern="dd/MM/yyyy"/> </td>
-							<!-- REMOVER COM SPRING <td id="remove_${curso.id }"><a href="removeCurso?id=${curso.id }">Remover</a></td> -->
+							<!-- REMOVE WITH SPRING <td id="remove_${curso.id }"><a href="removeCurso?id=${curso.id }">Remover</a></td> -->
 							
 							<td id="remove_${course.id}">
 								<a href="#" onclick="removeNow(${course.id })">
