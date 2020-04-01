@@ -1,7 +1,5 @@
 package com.school.controller;
 
-
-
 import javax.transaction.Transactional;
 import javax.validation.Valid;
 
@@ -15,6 +13,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.school.dao.CourseDao;
 import com.school.model.Course;
 
+/**
+ * 
+ * @author igorg
+ *
+ */
 @Controller
 @Transactional
 public class CourseController {
