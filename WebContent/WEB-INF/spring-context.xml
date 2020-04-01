@@ -16,7 +16,7 @@
 						http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
 
 	<context:component-scan
-		base-package="com.fj21review" />
+		base-package="com.school" />
 	<mvc:annotation-driven />
 
 	<mvc:default-servlet-handler />
@@ -57,8 +57,8 @@
 
 	<tx:annotation-driven />
 
-	<mvc:interceptors>
-		<bean class="com.fj21review.interceptor.AutorizadorInterceptor" />
-	</mvc:interceptors>
+<!-- 	<mvc:interceptors> -->
+<!-- 		<bean class="com.school.interceptor.AutorizadorInterceptor" /> -->
+<!-- 	</mvc:interceptors> -->
 
 </beans>
