@@ -8,35 +8,32 @@
 	<c:import url="header.jsp" />
 	
 	<div class="container">
-	
-		
-		<form action="addCurso" method="post">			
-			
+		<form action="addCouse" method="post">			
 			<div class="form-group row">
-				<label for="nomeCurso" class="col-sm-2 col-form-label">Nome do Curso: </label>
+				<label for="courseName" class="col-sm-2 col-form-label">Name of the course: </label>
 				<div class="col-sm-4">
-					<input type="text" name="nome" class="form-control" autocomplete="off">
+					<input type="text" name="name" class="form-control" autocomplete="off">
 				</div>
 				<form:errors path="cursos.nome" cssStyle="color:red"/>	
 			</div>
 
 			<div class="form-group row">
-				<label for="dataInicio" class="col-sm-2 col-form-label">Data de início:</label>	
+				<label for="startDate" class="col-sm-2 col-form-label">Start date:</label>	
 				<div class="col-sm-4">
 					<!--<dateCalendar:calendarTag id="dataInicio" value=""></dateCalendar:calendarTag>-->
-					<input class="form-control col-md-6" type="text" name="dataInicio" value='<fmt:formatDate value="" pattern="dd/MM/yyyy"/>' >
+					<input class="form-control col-md-6" type="text" name="startDate" value='<fmt:formatDate value="" pattern="dd/MM/yyyy"/>' >
 				</div>
 			</div>
 			
 			<div class="form-check">
-				<input type="checkbox" name="ativo" value="true" class="form-check-input">
-				<label class="form-check-label" for="cursoAtivo">
-					Curso ativo
+				<input type="checkbox" name="active" value="true" class="form-check-input">
+				<label class="form-check-label" for="activeCourse">
+					Is it active
 				</label>				
 			</div>
 			
 			<br>
-			<input type="submit" value="Adicionar" class="btn btn-outline-success">
+			<input type="submit" value="Add!" class="btn btn-outline-success">
 		</form>
 	</div>
 

@@ -33,7 +33,7 @@
 	
 	<body>			
 		<nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
-			  <a class="navbar-brand" href="index">IgorRomero</a>
+			  <a class="navbar-brand" href="index">Igor's School</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
@@ -50,17 +50,17 @@
 			      
 			      <li class="nav-item dropdown dmenu">
 			        <a class="nav-link dropdown-toggle" href="#" href="#" id="navbardrop" data-toggle="dropdown">
-			          <i class="fa fa-graduation-cap"></i>Cursos
+			          <i class="fa fa-graduation-cap"></i>Courses
 			        </a>
 			        <div class="dropdown-menu sm-menu">
 			          <a class="dropdown-item" href="listCurso">
-			          	<i class="fa fa-table"></i>Lista de Cursos
+			          	<i class="fa fa-table"></i>List of courses
 			          </a>
 			          
 			          <div class="dropdown-divider"></div>
 			          <a class="dropdown-item" href="formCurso">
 			          	<i class="fa fa-plus-circle"></i>
-			          	Cadastre um curso
+			          	Create a course
 			          </a>
 			        </div>
 			        
@@ -87,10 +87,10 @@
 				        </button>
 				      </div>
 				      <div class="modal-body">
-				        <i class="fa fa-question-circle"></i>Tem certeza que deseja sair?
+				        <i class="fa fa-question-circle"></i>Are you sure that you want to leave?
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
 				        <a href="logout" class="btn btn-info">Log out</a>
 				      </div>
 				    </div>

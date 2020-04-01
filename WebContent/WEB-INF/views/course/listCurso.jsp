@@ -11,51 +11,51 @@
 				<thead>
 					<tr align="center">
 						<th>ID</th>
-						<th>NOME</th>
+						<th>NAME</th>
 						<th>STATUS</th>
-						<th>DATA INICIO</th>
-						<th colspan="3">AÇÕES</th>
+						<th>START DATE</th>
+						<th colspan="3">ACTIONS</th>
 					</tr>
 				</thead>
-				<c:forEach items="${curso }" var="curso">
+				<c:forEach items="${courses}" var="course">
 					<tbody>
 						<tr align="center">
-							<td>${curso.id}</td>
-							<td>${curso.nome}</td>
-							<c:if test="${curso.ativo eq false }">
-								<td  id="ativo_${curso.id }" class="table-warning">INATIVO</td>
+							<td>${course.id}</td>
+							<td>${course.name}</td>
+							<c:if test="${course.active eq false }">
+								<td  id="ativo_${course.id }" class="table-warning">INACTIVATED</td>
 							</c:if>
 							
-							<c:if test="${curso.ativo eq true }">
-								<td class="table-success">ATIVO</td>
+							<c:if test="${course.active eq true }">
+								<td class="table-success">ACTIVATED</td>
 							</c:if>
 							
-							<td><fmt:formatDate value="${curso.dataInicio.time}" pattern="dd/MM/yyyy"/> </td>
+							<td><fmt:formatDate value="${course.startDate.time}" pattern="dd/MM/yyyy"/> </td>
 							<!-- REMOVER COM SPRING <td id="remove_${curso.id }"><a href="removeCurso?id=${curso.id }">Remover</a></td> -->
 							
-							<td id="remove_${curso.id}">
-								<a href="#" onclick="removeAgora(${curso.id })">
-									Remover
+							<td id="remove_${course.id}">
+								<a href="#" onclick="removeAgora(${course.id })">
+									Remove
 								</a>
 							</td>
 							<td>
-								<a href="editCurso?id=${curso.id }">
+								<a href="editCurso?id=${course.id }">
 									Editar
 								</a>
 							</td>							
 							
-							<c:if test="${curso.ativo eq false }">
+							<c:if test="${course.active eq false }">
 								<td >
-									<a href="#" onclick="ativaAgora(${curso.id})" id="tdAtiva_${curso.id}">
-									 	Ativar Curso
+									<a href="#" onclick="ativaAgora(${course.id})" id="tdAtiva_${curso.id}">
+									 	Active the course
 									</a>
 								</td>
 							</c:if>	
 							
-							<c:if test="${curso.ativo eq true }">
-								<td>						
+							<c:if test="${course.active eq true }">
+<!-- 								<td>						 -->
 									 	
-								</td>
+<!-- 								</td> -->
 							</c:if>	
 													
 						</tr>
