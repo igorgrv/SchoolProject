@@ -56,8 +56,8 @@
 
 	<tx:annotation-driven />
 
-<!-- 	<mvc:interceptors> -->
-<!-- 		<bean class="com.school.interceptor.AutorizadorInterceptor" /> -->
-<!-- 	</mvc:interceptors> -->
+	<mvc:interceptors>
+		<bean class="com.school.interceptor.InterceptorAuthorizer" />
+	</mvc:interceptors>
 
 </beans>
