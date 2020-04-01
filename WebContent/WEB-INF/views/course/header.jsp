@@ -94,7 +94,7 @@
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-				        <a href="logout" class="btn btn-info">Log out</a>
+				        <a href="logOut" class="btn btn-info">Log out</a>
 				      </div>
 				    </div>
 				  </div>
