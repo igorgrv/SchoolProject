@@ -53,12 +53,12 @@
 			          <i class="fa fa-graduation-cap"></i>Courses
 			        </a>
 			        <div class="dropdown-menu sm-menu">
-			          <a class="dropdown-item" href="listCurso">
+			          <a class="dropdown-item" href="listCourse">
 			          	<i class="fa fa-table"></i>List of courses
 			          </a>
 			          
 			          <div class="dropdown-divider"></div>
-			          <a class="dropdown-item" href="formCurso">
+			          <a class="dropdown-item" href="formCourse">
 			          	<i class="fa fa-plus-circle"></i>
 			          	Create a course
 			          </a>

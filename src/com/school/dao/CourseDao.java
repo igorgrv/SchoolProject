@@ -16,12 +16,12 @@ public class CourseDao {
 	@PersistenceContext
 	private EntityManager manager;
 	
-	public void addCurso (Course course) {
+	public void addCourse (Course course) {
 		course.setRegisterDate(Calendar.getInstance());
 		manager.persist(course);
 	}
 	
-	public void updateCurso (Course course) {
+	public void updateCourse (Course course) {
 		manager.merge(course);
 	}
 	
@@ -39,7 +39,7 @@ public class CourseDao {
 		return manager.createQuery("SELECT c FROM Course as c").getResultList();
 	}
 	
-	public void ativaCurso (Long id) {
+	public void activeCourse (Long id) {
 		Course course = getId(id);
 		course.setActive(true);
 		manager.merge(course);

@@ -3,16 +3,16 @@
 	
 
 	<script type="text/javascript">
-			function ativaAgora(id){
-				$.post("ativaCurso", {'id': id}, function(){
-					$("#ativo_"+id).html("ATIVO");
-					$("#ativo_"+id).attr("class", "table-success");
-					$("#tdAtiva_"+id).closest("a").hide();
+			function activeNow(id){
+				$.post("activeCourse", {'id': id}, function(){
+					$("#active_"+id).html("ACTIVATED");
+					$("#active_"+id).attr("class", "table-success");
+					$("#tdActive_"+id).closest("a").hide();
 				});
 			}
 			
-			function removeAgora(id){
-				$.post("removeCurso", {'id':id}, function(){
+			function removeNow(id){
+				$.post("removeCourse", {'id':id}, function(){
 					$("#remove_"+id).closest("tr").hide();
 				});
 			}

@@ -8,7 +8,7 @@
 	<c:import url="header.jsp" />
 	
 	<div class="container">
-		<form action="addCouse" method="post">			
+		<form action="addCourse" method="post">			
 			<div class="form-group row">
 				<label for="courseName" class="col-sm-2 col-form-label">Name of the course: </label>
 				<div class="col-sm-4">

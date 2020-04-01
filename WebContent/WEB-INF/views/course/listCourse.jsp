@@ -23,7 +23,7 @@
 							<td>${course.id}</td>
 							<td>${course.name}</td>
 							<c:if test="${course.active eq false }">
-								<td  id="ativo_${course.id }" class="table-warning">INACTIVATED</td>
+								<td  id="active_${course.id }" class="table-warning">INACTIVATED</td>
 							</c:if>
 							
 							<c:if test="${course.active eq true }">
@@ -34,19 +34,19 @@
 							<!-- REMOVER COM SPRING <td id="remove_${curso.id }"><a href="removeCurso?id=${curso.id }">Remover</a></td> -->
 							
 							<td id="remove_${course.id}">
-								<a href="#" onclick="removeAgora(${course.id })">
+								<a href="#" onclick="removeNow(${course.id })">
 									Remove
 								</a>
 							</td>
 							<td>
 								<a href="editCurso?id=${course.id }">
-									Editar
+									Edit
 								</a>
 							</td>							
 							
 							<c:if test="${course.active eq false }">
 								<td >
-									<a href="#" onclick="ativaAgora(${course.id})" id="tdAtiva_${curso.id}">
+									<a href="#" onclick="activeNow(${course.id})" id="tdActive_${curso.id}">
 									 	Active the course
 									</a>
 								</td>
