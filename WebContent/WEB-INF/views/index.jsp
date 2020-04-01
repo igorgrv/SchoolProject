@@ -6,9 +6,9 @@
 <%@	taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 	
-		<c:import url="curso/header.jsp" />
+		<c:import url="course/header.jsp" />
 		
-		<h2>Bem vindo, ${usuarioLogado.login}</h2><hr>
+		<h2>Welcome, ${userLogged.login}</h2><hr>
 			
 		
-		<c:import url="curso/footer.jsp" />
+		<c:import url="course/footer.jsp" />

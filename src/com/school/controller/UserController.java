@@ -27,7 +27,7 @@ public class UserController {
 		if(result.hasErrors()) {
 			return "forward:loginForm";
 		}
-		if (dao.existeUser(user)) {
+		if (dao.userExist(user)) {
 			session.setAttribute("userLogged", user);
 			return "index";
 		} 		

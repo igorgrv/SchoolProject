@@ -15,7 +15,7 @@ public class UserDao {
 	@PersistenceContext
 	private EntityManager mg;
 
-	public boolean existeUser(User user) {
+	public boolean userExist(User user) {
 		TypedQuery<User> query = mg
 				.createQuery("SELECT u FROM User as u WHERE login = :paramLogin AND pass = :paramPass", User.class);
 		query.setParameter("paramLogin", user.getLogin());
