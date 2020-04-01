@@ -10,7 +10,7 @@
 	<div class="container">
 		<form action="addCourse" method="post">			
 			<div class="form-group row">
-				<label for="courseName" class="col-sm-2 col-form-label">Name of the course: </label>
+				<label for="courseName" class="col-sm-2 col-form-label">Course name: </label>
 				<div class="col-sm-4">
 					<input type="text" name="name" class="form-control" autocomplete="off">
 				</div>
@@ -28,7 +28,7 @@
 			<div class="form-check">
 				<input type="checkbox" name="active" value="true" class="form-check-input">
 				<label class="form-check-label" for="activeCourse">
-					Is it active
+					Is the course active?
 				</label>				
 			</div>
 			

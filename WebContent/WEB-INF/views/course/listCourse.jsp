@@ -39,7 +39,7 @@
 								</a>
 							</td>
 							<td>
-								<a href="editCurso?id=${course.id }">
+								<a href="editCourse?id=${course.id }">
 									Edit
 								</a>
 							</td>							
